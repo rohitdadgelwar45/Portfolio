@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bubblegum Sans', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: rgb(66, 71, 71);
+    height: 100vh;
+    width: 100%;
+}
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 25px 7%;
+    border-bottom: solid 1px rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 15px rgb(33, 33, 33);
+    background-color: rgb(36, 39, 39);
+    height: 80px;
+}
+#menubar{
+   display: none;
+}
+#check{
+  display: none;
+}
+.fas fa-bar{
+   font-size: 3rem;
+   display: none;
+   cursor: pointer;
+}
+.logo{
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: orange;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+nav a{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    position: relative;
+    text-decoration: none;
+    margin-left: 3rem;
+    padding: .6rem .8rem;
+    text-transform: capitalize;
+    transition: .4s ease;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+nav a:hover{
+    /* background-color: black; */
+    color: orange;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 6% 6%;
+    margin: 4% 0;
+    /* position: fixed; */
+}
+.box{
+    width: 45%;
+    color: rgb(213, 208, 208);
+    /* padding: 3%; */
+    margin: 3% auto;
+}
+.box1 h4{
+    font-size: 1.3rem;
+}
+.box1 h1{
+    font-size: 2.8rem;
+    letter-spacing: .2rem;
+    margin: 5% auto;
+}
+.box1 h1 span{
+    color: rgb(215, 167, 77);
+}
+.box1 p{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+.box1 button{
+    display: block;
+    margin: 5% auto;
+    padding: 2% 9%;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+.box1 button:hover{
+    cursor: pointer;
+    color: orange;
+    background-color: rgb(52, 53, 52);
+}
+.box2 img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 50%;
+}
+
+/* Footer styling */
+
+footer{
+    width: 100%;
+    padding: 5% 10%;
+    /* margin: 5% 10%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+    header{
+        padding: 20px 4%;
+    }
+    html{
+        font-size: 14px;
+    }
+    .logo{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .box1{
+        width: 40%;
+    }
+    nav{
+        font-size: .9rem;
+    }
+    nav a{
+        margin-left: 1.5rem;
+    }
+    
+}
+@media (max-width: 840px) {
+    header{
+        padding: 14px 2.5%;
+    }
+    html{
+        font-size: 12px;
+    }
+    .logo{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .box1{
+        width: 40%;
+    }
+    .nav{
+        font-size: .9rem;
+    }
+    nav a{
+        margin-left: 1.3rem;
+    }
+    
+}
+@media (max-width: 600px) {
+    header{
+        padding: 12px 2.2%;
+    }
+    html{
+        font-size: 10px;
+    }
+    .logo{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .box1{
+        width: 40%;
+    }
+    nav{
+        font-size: .6rem;
+    }
+    
+}
+
+@media (max-width: 440px) {
+   
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        box-shadow: 1px rgb(28, 27, 27);
+        cursor: pointer;
+        padding: 10px;
+        /* height: 370px; */
+        height: 0px;
+    }
+    nav a{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        border: 1px solid rgb(20, 20, 20);
+        box-shadow: 0 0 15px rgb(14, 13, 13); 
+        background-color: rgb(8, 7, 7);
+        color: black;   
+        color: white;
+    }
+    .fa-bars{
+        display: block;
+    }
+    #menubar{
+        display: block;
+    }
+    .logo{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    #check:checked ~ nav{
+    
+        height: 330px;
+    }
+   section{
+    display: inline-block;
+    margin-top: 10%;
+    padding: 6% 2%;
+    background: fixed;
+   }
+   .box{
+    width: 90%;
+    margin-top: 10%;
+   }
+   
+}
+
+
